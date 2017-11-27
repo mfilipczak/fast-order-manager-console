@@ -1,0 +1,14 @@
+<div *ngIf="order">
+  <h2>{{order.externalId}} details!</h2>
+  <div><label>id: </label>{{order.id}}</div>
+  <div>
+    <label>External Id: </label>
+    <input [(ngModel)]="order.externalId" placeholder="externalId"/>
+  </div>
+  <div>
+    <label>Status: </label>
+    <input [(ngModel)]="order.currentState" placeholder="currentState"/>
+  </div>
+</div>
+<button (click)="goBack()">Back</button>
+<!-- <button (click)="save()">Save</button> -->

@@ -1,0 +1,18 @@
+<!--<ul class="orders">
+  <li *ngFor="let order of orders" [class.selected]="order === selectedOrder" (click)="onSelect(order)">
+    <span class="badge">{{order.id}}</span>
+    <span>{{order.externalId}}</span>
+    <button class="delete" (click)="delete(order); $event.stopPropagation()">x</button>
+  </li>
+</ul>
+<div *ngIf="selectedOrder">
+  <h2>
+    {{selectedOrder.externalId | uppercase}} 
+  </h2>
+  <button (click)="gotoDetail()">Pokaż szczegóły</button>
+</div>
+-->
+
+<app-order-list [orders] ="orders"></app-order-list>
+
+  

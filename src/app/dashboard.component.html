@@ -1,0 +1,27 @@
+<div class="grid grid-pad">
+ <!-- <div *ngFor="let order of orders" [routerLink]="['/detail', order.id]" class="col-1-4">
+    <div class="module order">
+      <h4>{{order.externalId}}</h4>
+    </div>
+  </div>-->
+  <!--<canvas baseChart
+  [data]="pieChartData"
+  [labels]="pieChartLabels"
+  [chartType]="pieChartType"
+  (chartHover)="chartHovered($event)"
+  (chartClick)="chartClicked($event)">
+</canvas>-->
+<div class="row" id="gaugesPanel">
+    <div class="col-xs-4">
+        <div class="row text-center">
+<canvas baseChart
+[data]="pieChartData"
+[labels]="pieChartLabels"
+[chartType]="pieChartType"
+>
+
+</canvas>
+</div>
+</div>
+</div>
+</div>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="6.0879989mm"
+   height="6.6145835mm"
+   viewBox="0 0 6.0879989 6.6145835"
+   version="1.1"
+   id="svg5020"
+   inkscape:version="0.92.0 r15299"
+   sodipodi:docname="taskIconW.svg">
+  <defs
+     id="defs5014" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#000000"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="5.6"
+     inkscape:cx="41.798546"
+     inkscape:cy="19.097157"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1796"
+     inkscape:window-height="1053"
+     inkscape:window-x="1911"
+     inkscape:window-y="111"
+     inkscape:window-maximized="1"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     showborder="false" />
+  <metadata
+     id="metadata5017">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-2.2924936e-8,-290.38542)">
+    <g
+       id="g4697"
+       transform="matrix(0.86877322,0,0,0.86877322,-1.1681449,195.68756)"
+       inkscape:export-filename="C:\Users\lukasz.nowicki\Documents\Projects\dbPoC\implementation\db_processIT\graphics\taskIconW.png"
+       inkscape:export-xdpi="99"
+       inkscape:export-ydpi="99">
+      <g
+         transform="translate(0,-0.52916667)"
+         id="g4648">
+        <rect
+           style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.21331389;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="rect4639"
+           width="4.0090427"
+           height="0.43431294"
+           x="4.3431296"
+           y="111.0138" />
+        <rect
+           style="fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:0.26458332;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="rect4641"
+           width="1.403165"
+           height="1.3363476"
+           x="1.8708867"
+           y="110.51268" />
+        <path
+           style="fill:none;stroke:#ffffff;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           d="m 1.4532781,110.34564 1.0022607,1.16931 1.4365737,-1.9043"
+           id="path4643"
+           inkscape:connector-curvature="0" />
+      </g>
+      <g
+         id="g4648-8"
+         transform="translate(-0.00824326,2.033693)">
+        <rect
+           style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.21331389;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="rect4639-5"
+           width="4.0090427"
+           height="0.43431294"
+           x="4.3431296"
+           y="111.0138" />
+        <rect
+           style="fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:0.26458332;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="rect4641-7"
+           width="1.403165"
+           height="1.3363476"
+           x="1.8708867"
+           y="110.51268" />
+        <path
+           style="fill:none;stroke:#ffffff;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           d="m 1.4532781,110.34564 1.0022607,1.16931 1.4365737,-1.9043"
+           id="path4643-5"
+           inkscape:connector-curvature="0" />
+      </g>
+      <g
+         id="g4648-86"
+         transform="translate(-0.04165195,4.6341984)">
+        <rect
+           style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.21331389;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="rect4639-6"
+           width="4.0090427"
+           height="0.43431294"
+           x="4.3431296"
+           y="111.0138" />
+        <rect
+           style="fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:0.26458332;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="rect4641-8"
+           width="1.403165"
+           height="1.3363476"
+           x="1.8708867"
+           y="110.51268" />
+      </g>
+    </g>
+  </g>
+</svg>

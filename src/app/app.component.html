@@ -1,0 +1,168 @@
+    <div class="container-fluid" id="header">
+      <div class="row">
+      <div class="col-sm-8 col-xs-4" [ngClass]="{'bottom-padding' : true}">
+        <a href="#"><img width="300" src="assets/graphics/logo.svg" alt="logo" id="mainLogo" /></a>
+      </div>
+      <div class="col-sm-4 col-xs-8" >
+        <div class="row">	&nbsp;
+        <!--  <div class="col-xs-10 text-right" id="userData">
+            <h2 id="userName">User</h2>
+            <h4 id="userPosition">position</h4>
+            <h6 id="userBranch">jednostka: 
+              <span class="dark-blue" >
+                grupa
+               <!-- <span *ngIf="$index < credentials.groups.length - 1">&#44;&nbsp;</span>-->
+          <!--    </span>
+            </h6>
+          </div>
+          <div class="col-xs-2 text-left" id="userPhoto"><img src="assets/graphics/user.png" alt=""/></div>-->
+        </div>
+      </div>
+      </div>
+    </div>
+    
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-xs-2 text-center" id="accordionNavi" >
+          <div class="panel-group" id="desktopNavi">
+            <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title" (click)="setActivePage('dashboard');">
+              <a [routerLink]="['/dashboard']" routerLinkActive="active" >
+                <div class="row">
+                  <div class="col-xs-3">
+                    <img src="assets/graphics/desktopIconW.svg" alt=""/>
+                  </div>
+                  <div class="col-xs-6">
+                    <span class="heading-label">Mój pulpit</span>
+                  </div>
+                  <div class="col-xs-3"></div>
+                </div>
+              </a>
+              </h4>
+            </div>
+            </div>
+          </div>
+          <div class="panel-group" id="tasksNavi">
+            <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+              <div class="row">
+                <div class="col-xs-3">
+                  <img src="assets/graphics/procesIconW.svg" alt=""/>
+                </div>
+                <div class="col-xs-6">
+                  <span class="heading-label">Zamówienia</span>
+                </div>
+                <div class="col-xs-3"></div>
+              </div>
+              </h4>
+            </div>
+            <div class="panel-collapse collapse in">
+                <div class="panel-body" [ngClass]="{'active' : activePage == 'orders'}">
+                  <a routerLink="/orders" routerLinkActive="active" (click)="setActivePage('orders');  $event.stopPropagation();">
+                  <div class="row">
+                    <div class="col-xs-9 text-right">
+                      <span class="panel-label">LISTA</span>
+                    </div>
+                    <div class="col-xs-3">
+                      <img src="assets/graphics/arrowGrey.svg" alt="" *ngIf="activePage=='orders'"/>
+                      <img src="assets/graphics/arrowBlue.svg" alt="" *ngIf="activePage!='orders'"/>
+                    </div>
+                  </div>
+                </a>
+                </div>
+                <div class="panel-body" [ngClass]="{'active':activePage=='search'}">
+                <a routerLink="/search" (click)="setActivePage('search')" >
+                  <div class="row">
+                    <div class="col-xs-9 text-right">
+                      <span class="panel-label">WYSZUKAJ</span>
+                    </div>
+                    <div class="col-xs-3">
+                      <img src="assets/graphics/arrowGrey.svg" alt="" *ngIf="activePage=='search'"/>
+                      <img src="assets/graphics/arrowBlue.svg" alt="" *ngIf="activePage!='search'"/>
+                    </div>
+                  </div>
+                </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--<div class="panel-group" id="procesesNavi">
+            <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+              <div class="row">
+                <div class="col-xs-3">
+                  <img src="assets/graphics/procesIconW.svg" alt=""/>
+                </div>
+                <div class="col-xs-6">
+                  <span class="heading-label">Procesy</span>
+                </div>
+                <div class="col-xs-3"></div>
+              </div>
+              </h4>
+            </div>
+            <div class="panel-collapse collapse in">
+                <div class="panel-body" [ngClass]="{'active':activePage=='processes-register'}">
+                <a href="/processes-register" (click)="setActivePage('processes-register')" >
+                  <div class="row">
+                    <div class="col-xs-9 text-right">
+                      <span class="panel-label">REJESTRACJA</span>
+                    </div>
+                    <div class="col-xs-3">
+                      <img src="assets/graphics/arrowGrey.svg" alt="" *ngIf="activePage=='processes-register'"/>
+                      <img src="assets/graphics/arrowBlue.svg" alt="" *ngIf="activePage!='processes-register'"/>
+                    </div>
+                  </div>
+                </a>
+                </div>
+                <div class="panel-body" [ngClass]="{'active':activePage=='processes-browse'}">
+                <a href="/processes-browse" (click)="setActivePage('processes-browse')" >
+                  <div class="row">
+                    <div class="col-xs-9 text-right">
+                      <span class="panel-label">INSTANCJE PROCESÓW</span>
+                    </div>
+                    <div class="col-xs-3">
+                      <img src="assets/graphics/arrowGrey.svg" alt="" *ngIf="activePage=='processes-browse'"/>
+                      <img src="assets/graphics/arrowBlue.svg" alt="" *ngIf="activePage!='processes-browse'"/>
+                    </div>
+                  </div>
+                </a>
+                </div>
+                <div class="panel-body" [ngClass]="{'active':activePage=='processes-search'}">
+                <a href="/processes-search" (click)="setActivePage('processes-search')" >
+                  <div class="row">
+                    <div class="col-xs-9 text-right">
+                      <span class="panel-label">WYSZUKAJ PROCES</span>
+                    </div>
+                    <div class="col-xs-3">
+                      <img src="assets/graphics/arrowGrey.svg" alt="" *ngIf="activePage=='processes-search'"/>
+                      <img src="assets/graphics/arrowBlue.svg" alt="" *ngIf="activePage!='processes-search'"/>
+                    </div>
+                  </div>
+                </a>
+                </div>
+            </div>
+            </div>
+          </div>-->
+        </div>
+        <div class="col-xs-10" id="content">
+          <div class="row" id="top" >
+            <div class="col-xs-10 text-left">
+                <p *ngIf="activePage==='dashboard'"> <img src="assets/graphics/desktopIconB.svg" alt=""/> <span  class="left-indent">Mój pulpit</span></p>
+                <p *ngIf="activePage==='orders'"><img src="assets/graphics/processIconB.svg" alt=""/> <span  class="left-indent">Zamówienia</span></p>
+                <p *ngIf="activePage==='search'"><img src="assets/graphics/processIconB.svg" alt=""/> <span  class="left-indent">Zamówienia Wyszukiwanie</span></p>
+            </div>
+           <!-- <div class="col-xs-2 text-right">
+              <a class="btn" href="#" (click)="logout()"><img src="assets/graphics/logoutIcon.svg" alt=""/><span class="left-indent">Wyloguj</span></a>
+            </div>-->
+          </div>
+          <ngx-loading [show]="loading" [config]="{ backdropBorderRadius: '14px' }"></ngx-loading>
+          <router-outlet></router-outlet>
+        </div>
+      </div>
+      
+
+    
+    

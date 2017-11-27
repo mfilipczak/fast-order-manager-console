@@ -1,0 +1,359 @@
+@import '~less/_variables';
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	padding-bottom: 20px;
+}
+#header {
+	padding-top: 20px;
+	border-bottom: 1px #6d6d6d solid;
+}
+#mainLogo {
+	margin-left: 30px;
+	margin-top: 5px;
+}
+#userName, #userPosition, #userBranch {
+	margin: 1px 5px;
+}
+#userData, #userPhoto {
+	padding-left: 2px;
+	padding-right: 0px;
+	margin-bottom: 2px;
+}
+#accordionNavi {
+	padding: 0px;
+}
+#accordionNavi .panel-group {
+	margin-bottom: 0px;
+}
+#accordionNavi .panel{
+	border-radius: 0px;
+}
+#accordionNavi .panel-heading{
+	background-color: @base;
+	color: #ffffff;
+	border-radius: 0px;
+	border: 0px;
+}
+#accordionNavi .heading-label {
+	font-size:1.4em;
+}
+#accordionNavi .panel-label {
+	color: @base;
+}
+#accordionNavi .panel-body {
+	padding-left: 5px;
+}
+#accordionNavi .active {
+	background-color: #e6e6e6;
+}
+#accordionNavi .active .panel-label{
+	color: #6d6d6d;
+}
+#accordionNavi .panel-body:hover {
+	/*background-color: @base;*/
+}
+#accordionNavi .panel-body a:hover .panel-label {
+	text-decoration:underline;
+}
+#accordionNavi .panel-heading a.collapsed img.arrow-live {
+	/* Firefox */
+	-moz-transform: rotate(90deg);
+	/* WebKit */
+	-webkit-transform: rotate(90deg);
+	/* Opera */
+	-o-transform: rotate(90deg);
+	/* Standard */
+	transform: rotate(90deg);
+}
+#top {
+	border-bottom: 1px #6d6d6d solid;
+	padding: 5px 0;
+}
+#top ul {
+	margin-bottom: 0px;
+}
+#top p {
+	font-size: 1.5em;
+	padding: 0px;
+}
+#top .btn {
+	font-size: 1.5em;
+	padding: 2px;
+}
+#filters , #noTasks{
+	padding: 20px 0px 20px 10px;
+}
+#filters div {
+	padding: 0px;
+}
+#filters span.input-label {
+	font-weight: normal;
+	font-size: 1.3em;
+	padding: 3px;
+}
+#filters .form-horizontal div {
+	padding: 0px;
+}
+#taskSort {
+	padding: 0px 20px;
+}
+.task-sort-panel {
+	padding-top: 2px;
+	padding-bottom: 2px;
+	border-top: 1px #d9dee6 solid;
+	border-bottom: 1px #d9dee6 solid;
+	margin-bottom: 1px;
+	font-size: 0.8em;
+}
+.task-sort-panel i:hover {
+	cursor: pointer;
+}
+.task-sort-panel .active {
+	color: @base;
+}
+#tasks, #newProcess {
+	padding: 5px 20px;
+}
+#tasks .task {
+	/*background-color: #f2f4f7;*/
+	background-color: #e6e6e6;
+	padding-top: 2px;
+	padding-bottom: 10px;
+	border-bottom: 1px #d9dee6 solid;
+	margin-bottom: 10px;
+}
+#tasks .taskHeader {
+	font-size: 0.8em;
+}
+#tasks .taskData {
+	font-weight: 600;
+}
+#tasks .taskData  .open  a img {
+	/* Firefox */
+	-moz-transform: rotate(90deg);
+	/* WebKit */
+	-webkit-transform: rotate(90deg);
+	/* Opera */
+	-o-transform: rotate(90deg);
+	/* Standard */
+	transform: rotate(90deg);
+}
+.dropdown ul {
+	background-color: @base;
+	border-radius: 0px;
+}
+.dropdown a {
+	color: @base;
+}
+.dropdown li a {
+	color: #ffffff;
+}
+.dropdown li a:hover {
+	background-color: @base;
+	text-decoration: underline;
+	color: #ffffff;
+}
+#newProcess .panel-heading {
+	background-color: @base;
+}
+#newProcess .panel-title {
+	color: #ffffff;
+}
+#availProcesses, #processSelect, #gaugesPanel {
+	padding: 10px 20px;
+	border-bottom: 1px #6d6d6d solid;
+	background-color: #e6e6e6;
+}
+a {
+	color: #ffffff;
+}
+a:hover {
+	color: #ffffff;
+	text-decoration: underline;
+}
+#accordionNavi a:hover {
+	color: #ffffff;
+}
+.pagination {
+	margin:10px;
+}
+.pagination > li > a {
+    padding: 3px 5px;
+    color: @base;
+	font-weight: 600;
+	border: none;
+	font-size: 1.2em;
+}	
+.pagination > li > a:hover {
+    color: @base;
+    background-color: #ffffff;
+	text-decoration: underline;
+}
+.pagination > .active > a, .pagination > .active > a:hover, .pagination > .active > a:focus, .pagination > .disabled > a, .pagination > .disabled > a:hover {
+    color: #6d6d6d;
+    background-color: #ffffff;
+    border-color: none;
+	text-decoration: none;
+}
+.gauge-panel .panel-heading {
+	border-bottom: 1px #6d6d6d solid;
+	margin: 10px 0px;
+}
+.gauge {
+	background-color: #ffffff;
+	padding: 0px;
+	margin: 0 5px;
+    box-shadow: 2px 2px 5px #6d6d6d;
+}
+.btn, .panel, .panel-heading {
+	border-radius: 0px;
+}
+.btn-primary {
+	background-color: @base;
+	border-color: @base;
+}
+.btn-primary:hover {	
+	text-decoration: underline;
+	background-color: @base;
+	border-color: @base;
+}
+.btn-primary:focus {	
+	background-color: @base;
+	border-color: @base;
+}
+.btn-default:hover, .btn-default:focus {	
+	background-color: #ffffff;
+}
+.bottom-border {
+	border-bottom: 1px #6d6d6d solid;
+}
+.left-indent {
+	margin-left: 5px;
+}
+.top-indent {
+	margin-top: 10px;
+}
+.dark-blue {
+	color: #000098;
+}
+.light-blue {
+	color: @base;
+}
+.text-red {
+	color: #e74c3c;
+}
+.text-green {
+	color: #2ecc71;
+}
+.text-orange {
+	color: #dd9b15;
+}
+.badge {
+	background-color: @base;
+}
+div.spinner {
+    width: 28px;
+	height: 28px;
+    margin: 0 auto;
+	position:relative;
+}
+.spinner {
+    width: 68px;
+	height: 68px;
+    margin: 0 auto;
+	position:relative;
+}
+/*.modal {
+   position: absolute;
+   top: 10px;
+   right: -30px;
+   bottom: 0;
+   left: -1000px;
+   z-index: 10040;
+   overflow: auto;
+   overflow-y: auto;
+}
+.modal-content {
+  width: 1550px;
+}
+*/
+.bottom-padding {
+	padding-bottom: 20px;
+}
+.normal-weight {
+	font-weight: 500;
+}
+p.ldap-group-list {
+	color: @base;
+}
+.datetime-picker-dropdown > li.date-picker-menu div > table .btn-default {
+    border: 0;
+}
+.modal-header {
+	border-bottom: 1px #6d6d6d solid;
+}
+.modal-body {
+	padding: 0px 15px;
+}
+.modal-panel {
+	border-bottom: 1px #6d6d6d solid;
+}
+.modal-panel-heading {
+	background-color: @base;
+	padding: 5px 15px;
+}
+.modal-panel-title {
+	color: #ffffff;
+	font-size: 1.3em;
+}
+.modal-panel-title:hover, .modal-panel-heading  img.arrow-live:hover {
+	text-decoration: underline;
+	cursor: pointer;
+}
+.modal-panel-heading img.arrow-live:not(.collapsed ){
+	/* Firefox */
+	-moz-transform: rotate(90deg);
+	/* WebKit */
+	-webkit-transform: rotate(90deg);
+	/* Opera */
+	-o-transform: rotate(90deg);
+	/* Standard */
+	transform: rotate(90deg);
+}
+.modal-panel-body {
+	padding: 15px;
+}
+.modal-panel-white {
+	background-color: #ffffff;
+}
+.modal-panel-grey {
+	background-color: #e6e6e6;
+}
+.modal-panel > .modal-panel .modal-panel-heading {
+	background-color: #ffffff;
+}
+.modal-panel > .modal-panel .modal-panel-title {
+	color: @base;
+	margin-left: 10px;
+}
+.modal-panel > .modal-panel:last-child {
+	border-bottom: 0px;
+}
+.modal-panel-alert {
+	background-color: #ff0000;
+	border-bottom: 1px #6d6d6d solid;
+	margin: 0px;
+}
+.validation-result {
+	color: #e74c3c;
+	font-size: 0.9em;
+}
+.datepicker {
+	background-image: url('../assets/graphics/calendarIconB.svg');	
+    background-repeat: no-repeat;
+    background-position: 98% 50%; 
+}
+.datepicker:hover {
+	cursor: pointer;
+}

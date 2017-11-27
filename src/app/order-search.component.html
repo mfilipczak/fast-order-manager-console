@@ -1,0 +1,32 @@
+<div id="search-component">
+  	<div class="row" id="processSelect">
+        <div class="col-xs-12 text-left">
+          <form name="searchForm" class="form-inline" data-ng-submit="searchProcess()">
+            <div class="form-group" data-ng-class="{'has-error' : !searchForm.externalId.$valid &amp;&amp; searchForm.externalId.$touched}">
+              <label class="control-label" for="externalId">Identyfikator zamówienia:</label>
+              <div>
+              <input id="externalId" name="externalId" maxlength="60" class="form-control" data-ng-model="externalId" ng-required="!requestId && !pesel" autofocus="autofocus"/>
+              </div>
+            </div>
+            <div class="form-group" data-ng-class="{'has-error' : !searchForm.registerDateFrom.$valid &amp;&amp; searchForm.requestId.$registerDateFrom}">
+              <label class="control-label" for="registerDateFrom">Data rejestracji (od):</label>
+              <owl-date-time [(ngModel)]="registerDateFrom" [inputId]="'registerDateFrom'" [locale]="pl" [ngModelOptions]="{standalone: true}" [dateFormat]="'YYYY-MM-DD hh:mm:ss'" [placeHolder]="'YYYY-MM-DD hh:mm:ss'"></owl-date-time> 
+            </div>
+            <div class="form-group" data-ng-class="{'has-error' : !searchForm.registerDateFrom.$valid &amp;&amp; searchForm.requestId.$registerDateFrom}">
+                <label class="control-label" for="registerDateTo">Data rejestracji (do):</label>
+                <owl-date-time [(ngModel)]="registerDateTo" [inputId]="'registerDateTo'" [ngModelOptions]="{standalone: true}"  [locale]="pl" [dateFormat]="'YYYY-MM-DD hh:mm:ss'" [placeHolder]="'YYYY-MM-DD hh:mm:ss'"></owl-date-time> 
+              </div>
+            <input type="submit" id="submit" class="btn btn-primary" value="Szukaj" />
+          </form>
+        </div>
+      </div>
+  <input #searchBox id="search-box"/> 
+  <owl-date-time [(ngModel)]="input1Moment" [inputId]="'input1'"></owl-date-time> <button (click)="search(searchBox.value)">Wyszukaj</button>
+  <div>
+   <!-- <div *ngFor="let order of orders | async"
+         (click)="gotoDetail(order)" class="search-result" >
+      {{order.externalId}}
+    </div>-->
+    <app-order-list [orders] ="orders"></app-order-list>
+  </div>
+</div>

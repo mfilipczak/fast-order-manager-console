@@ -1,0 +1,31 @@
+
+<div class="row" id="tasks">
+    <div class="col-xs-12 task" *ngFor="let order of orders | paginate: { itemsPerPage: 10, currentPage: p }"> <!--dir-paginate="instance in processInstances|orderBy:sortBy|itemsPerPage:itemsPerPage|filter:customerFilter">-->
+      <div class="row taskHeader">
+        <div class="col-xs-2 text-left">Identyfikator</div>
+        <div class="col-xs-4 text-right">Identyfikator zewnętrzny</div>
+        <div class="col-xs-1 text-right">Status</div>
+        <div class="col-xs-2 text-right">Data zarejestrowania</div>
+        <div class="col-xs-3 text-right">Data zakończenia</div>
+      </div>
+      <div class="row taskData">
+        <div class="col-xs-2 text-left" [ngClass]="{'text-red':order.currentState === 'Error','dark-blue':order.currentState === 'Processing','text-green':order.currentState === 'Completed','text-orange':order.currentState === 'Zatrzymany'}">
+          <fa name="cog" spin *ngIf="order.currentState === 'Processing'"></fa>
+          <fa name="warning" *ngIf="order.currentState === 'Error'"></fa>
+          <fa name="check-square-o" *ngIf="order.currentState === 'Completed'"></fa>
+          <fa name="stop-circle" *ngIf="order.currentState === 'Zatrzymany'"></fa>
+          &nbsp;{{ order.id }}
+        </div>
+        <div class="col-xs-4 text-right"><a href="#" (click)="showImage(order.instanceId)">{{order.externalId}}</a></div>
+        <div class="col-xs-1 text-right" [ngClass]="{'text-red':order.currentState === 'Error','dark-blue':order.currentState === 'Processing','text-green':order.currentState === 'Completed','text-orange':order.currentState === 'Zatrzymany'}">{{ order.currentState }}</div>
+        <div class="col-xs-2 text-right">{{ order.createTime }}</div>
+        <div class="col-xs-3 text-right">{{ order.completeTime}}</div>
+      </div>
+    </div>
+  </div>
+  <div class="row" *ngIf="orders">
+    <div class="col-xs-12 text-right">
+        <pagination-controls (pageChange)="p = $event"></pagination-controls>
+  <!--    <dir-pagination-controls max-size="5" direction-links="true" boundary-links="true"></dir-pagination-controls>-->
+    </div>
+  </div>
